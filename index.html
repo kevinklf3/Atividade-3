@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulando o DOM</title>
+    <script>
+        function alterarConteudo() {
+            // Pergunta algo ao usuário
+            let novoTexto = prompt("Digite um novo texto para o parágrafo:");
+
+            // Altera o conteúdo do elemento com id "paragrafo1"
+            if (novoTexto !== null) {
+                document.getElementById("paragrafo1").innerText = novoTexto;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Título principal</h1>
+    <h2>Subtítulo</h2>
+    <p id="paragrafo1">Este é um parágrafo que será alterado.</p>
+    <input type="text" placeholder="Campo de texto">
+    <div>Este é um conteúdo de uma div.</div>
+
+    <br><br>
+    <button onclick="alterarConteudo()">Clique para alterar o parágrafo</button>
+</body>
+</html>
